@@ -1,0 +1,25 @@
+table, td, tr{
+
+    border: solid black 1px;
+
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+td{
+    width: 64px;
+    height: 64px;
+}
+
+#victoire{
+    color: green;
+}
+
+#zone{
+
+    padding: 2em;
+
+}

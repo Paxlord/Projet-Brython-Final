@@ -1,0 +1,86 @@
+<head>
+    <title>Brython Takuzu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="brython.js"></script>
+<script src="brython_stdlib.js"></script>
+
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<body onload="brython()">
+
+  
+  <nav>
+    <div class="nav-wrapper cyan">
+      <a href="#" class="brand-logo center">Brython Takuzu</a>
+    </div>
+  </nav>
+        
+  <div class="container">
+
+    <div class="section">
+      <h5>Règles du jeu</h5>
+      <ul>
+        <li>Règle numéro 1 : Pas de lignes ou de colonnes identique.</li>
+        <li>Règle numéro 2 : Même nombre de zéros et de uns sur chaque ligne et chaque colonne.</li>
+        <li>Règle numéro 3 : Pas plus de deux zéros et uns consécutifs sur une meme ligne ou colonne.</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row">
+
+      <div class="col s12">
+
+        <div class="section center-align">
+
+            <script src="game.py" type="text/python"></script>
+
+            <div class="input-field">
+                <select id="select-size">
+                  <option value="" disabled selected>Choississez votre difficulté</option>
+                  <option value="4">Facile : 4x4</option>
+                  <option value="6">Moyen : 6x6</option>
+                  <option value="8">Difficile : 8x8</option>
+                </select>
+                <label>Difficulté</label>
+            </div>
+
+            <button class="btn btn-large cyan-darken-3" id="generate-button">Generer une nouvelle grille</button>
+
+            <div id="zone">
+            </div>
+
+            <div id="image-dispenser" style="display: none;">
+                  
+              <img src="TileOne.png" alt="">
+              <img src="TileZero.png" alt="">
+              <img src="EmtyTile.png" alt="">
+            
+            </div>
+
+            <button id="valider" class="btn btn-large cyan-darken-3">Valider</button>
+
+            <div id="victoire"></div>
+
+
+        </div>
+          
+
+      </div>
+
+    </div>
+    
+
+  </div>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="main.js"></script>
+
+  
+</body>
